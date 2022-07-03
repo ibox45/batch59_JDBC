@@ -12,9 +12,9 @@ public class HMC_db_Stepdefinitions {
     String username="techproed";
     String password="P2s@rt65";
 
-    Connection connection; // DATAbase 'e bağlanmamız sağlar
-    Statement statement; // query calıştırmamız sağlıyor
-    ResultSet resultSet; // query sonucunda dönen sonucu sto etmemiziz sağlıyor
+    Connection connection; // DATAbase 'e bağlanmamızı sağlar
+    Statement statement; // query calıştırmamızı sağlıyor
+    ResultSet resultSet; // query sonucunda dönen sonucu store etmemizi sağlıyor
     @Given("kullanici HMC veri tabanina baglanir")
     public void kullanici_hmc_veri_tabanina_baglanir() throws SQLException {
         connection= DriverManager.getConnection(url,username,password);
